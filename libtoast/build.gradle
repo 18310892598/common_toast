@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.piitw.plugin'
 
 android {
     compileSdkVersion 29
@@ -6,7 +7,7 @@ android {
 
 
     defaultConfig {
-        minSdkVersion 19
+        minSdkVersion 16
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -31,4 +32,16 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+}
+
+publish {
+    groupId = 'com.ole.libtoast'
+    artifactId = 'toast'
+    publishVersion = rootProject.versionName
+    isDebug = false
+
+    repositoryUrl = 'https://nexus.olafuwu.com/repository/maven-oleyc-android-releases/'
+    snapshotRepositoryUrl = 'https://nexus.olafuwu.com/repository/maven-oleyc-android/'
+    username = 'DingXiaoWei'
+    password = 'B0C1F4AE795911E89C2188E9FE6@C0E4'
 }
