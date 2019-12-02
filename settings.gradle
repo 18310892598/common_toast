@@ -1,0 +1,2 @@
+include ':app', ':libtoast'
+rootProject.name='common_toast'
