@@ -28,7 +28,6 @@ api 'com.ole.libtoast:toast:1.0.0'
  其他具备能力：
 
 说明：开发具体UI说明链接地址
-file:///Users/huyixiang/Downloads/toast%E6%A0%87%E6%B3%A8/index.html
-
+https://confluence.olafuwu.com/pages/viewpage.action?pageId=19019340
 
 ```
