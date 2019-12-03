@@ -14,7 +14,7 @@ import com.ole.libtoast.T;
 public class MainActivity extends Activity implements View.OnClickListener{
 
 
-    private Button one,one1,one2,one3;
+    private Button one,one1,one2,one3,one4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,9 +26,11 @@ public class MainActivity extends Activity implements View.OnClickListener{
         one1=findViewById(R.id.one1);
         one2=findViewById(R.id.one2);
         one3=findViewById(R.id.one3);
+        one4=findViewById(R.id.one4);
         one1.setOnClickListener(this);
         one2.setOnClickListener(this);
         one3.setOnClickListener(this);
+        one4.setOnClickListener(this);
 
           }
 
@@ -47,6 +49,9 @@ public class MainActivity extends Activity implements View.OnClickListener{
                 break;
             case R.id.one3:
                 T.showWrongCustomImage(this,"123123123");
+                break;
+            case R.id.one4:
+                T.showCustomView(this,"123123123");
                 break;
         }
     }
