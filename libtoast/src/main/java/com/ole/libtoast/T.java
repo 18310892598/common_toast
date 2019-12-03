@@ -12,6 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.widget.AppCompatImageView;
+import androidx.appcompat.widget.AppCompatTextView;
 
 /**
  * @desc android 乘客端和司机端toast的封装
@@ -93,6 +94,24 @@ public class T {
         toast.setDuration(Toast.LENGTH_SHORT);
         toast.setGravity(Gravity.CENTER, 0, 0);
         toast.show();
+    }
+
+
+    /**
+     * @如果是没有图片，默认此种方法
+     * @param context
+     * @param content
+     */
+    public static void showCustomView(Context context, String content) {
+        Toast toast = new Toast(context);
+        View view = LayoutInflater.from(context).inflate(R.layout.layout_custom_toast_view, null, false);
+        AppCompatTextView contentText = view.findViewById(R.id.content);
+        contentText.setText(content);
+        toast.setView(view);
+        toast.setDuration(Toast.LENGTH_SHORT);
+        toast.setGravity(Gravity.CENTER, 0, 0);
+        toast.show();
+
     }
 
 }
