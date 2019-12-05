@@ -26,8 +26,8 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
-//    implementation project(path: ':libtoast')
+    implementation project(path: ':libtoast')
     implementation 'com.alibaba:fastjson:1.1.55.android'
-    api 'com.ole.libtoast:toast:1.0.1'
+//    api 'com.ole.libtoast:toast:1.0.1'
 }
 
