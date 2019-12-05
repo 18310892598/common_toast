@@ -7,7 +7,7 @@
 ```java
 第一步骤
 //添加依赖
-api 'com.ole.libtoast:toast:1.0.0'
+api 'com.ole.libtoast:toast:1.0.1'
 
  
 ```
@@ -24,6 +24,8 @@ api 'com.ole.libtoast:toast:1.0.0'
  T.showloadingCustomImage(this,"123123123");
 4、警告toast
  T.showWrongCustomImage(this,"123123123");
+5、通用没有图片的toast展示
+T.showCustomView(this,"1123132");
 
  其他具备能力：
 
