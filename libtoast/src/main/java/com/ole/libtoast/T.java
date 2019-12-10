@@ -1,6 +1,7 @@
 package com.ole.libtoast;
 
 
+import android.app.Activity;
 import android.content.Context;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -25,8 +26,12 @@ public class T {
     /**
      * 自定义失败弹出toast
      * @param context
+     * @param  toastType :0 默认为 LENGTH_SHORT  1：则表示LENGTH_LONG
      */
-    public static void showFailCustomImage(Context context,String title) {
+    public static void showFailCustomImage(Context context,String title,int toastType) {
+        if (context instanceof Activity && ((Activity) context).isFinishing()) {
+            return;
+        }
         Toast toast = new Toast(context);
         View view = LayoutInflater.from(context).inflate(R.layout.layout_custom_toast, null, false);
         AppCompatImageView img = view.findViewById(R.id.img);
@@ -34,7 +39,11 @@ public class T {
         tvc.setText(title);
         img.setImageResource(R.mipmap.toast_icon_wrong);
         toast.setView(view);
-        toast.setDuration(Toast.LENGTH_SHORT);
+        if(toastType==0) {
+            toast.setDuration(Toast.LENGTH_SHORT);
+        }else{
+            toast.setDuration(Toast.LENGTH_LONG);
+        }
         toast.setGravity(Gravity.CENTER, 0, 0);
         toast.show();
     }
@@ -42,8 +51,12 @@ public class T {
     /**
      * 自定义成功弹出toast
      * @param context
+     * @param  toastType :0 默认为 LENGTH_SHORT  1：则表示LENGTH_LONG
      */
-    public static void showSuccessCustomImage(Context context,  String title) {
+    public static void showSuccessCustomImage(Context context,  String title,int toastType) {
+        if (context instanceof Activity && ((Activity) context).isFinishing()) {
+            return;
+        }
         Toast toast = new Toast(context);
         View view = LayoutInflater.from(context).inflate(R.layout.layout_custom_toast, null, false);
         AppCompatImageView img = view.findViewById(R.id.img);
@@ -51,7 +64,11 @@ public class T {
         tvc.setText(title);
         img.setImageResource(R.mipmap.toast_icon_succeed);
         toast.setView(view);
-        toast.setDuration(Toast.LENGTH_SHORT);
+        if(toastType==0) {
+            toast.setDuration(Toast.LENGTH_SHORT);
+        }else{
+            toast.setDuration(Toast.LENGTH_LONG);
+        }
         toast.setGravity(Gravity.CENTER, 0, 0);
         toast.show();
     }
@@ -59,8 +76,12 @@ public class T {
     /**
      * 自定义加载弹出toast
      * @param context
+     * @param  toastType :0 默认为 LENGTH_SHORT  1：则表示LENGTH_LONG
      */
-    public static void showloadingCustomImage(Context context, String title) {
+    public static void showloadingCustomImage(Context context, String title,int toastType) {
+        if (context instanceof Activity && ((Activity) context).isFinishing()) {
+            return;
+        }
         Toast toast = new Toast(context);
         View view = LayoutInflater.from(context).inflate(R.layout.layout_custom_toast, null, false);
         AppCompatImageView img = view.findViewById(R.id.img);
@@ -73,7 +94,11 @@ public class T {
         animation.setInterpolator(lin);
         img.startAnimation(animation);
         toast.setView(view);
-        toast.setDuration(Toast.LENGTH_SHORT);
+        if(toastType==0) {
+            toast.setDuration(Toast.LENGTH_SHORT);
+        }else{
+            toast.setDuration(Toast.LENGTH_LONG);
+        }
         toast.setGravity(Gravity.CENTER, 0, 0);
         toast.show();
     }
@@ -82,8 +107,12 @@ public class T {
     /**
      * 自定义警告弹出toast
      * @param context
+     * @param  toastType :0 默认为 LENGTH_SHORT  1：则表示LENGTH_LONG
      */
-    public static void showWrongCustomImage(Context context,  String title) {
+    public static void showWrongCustomImage(Context context,  String title,int toastType) {
+        if (context instanceof Activity && ((Activity) context).isFinishing()) {
+            return;
+        }
         Toast toast = new Toast(context);
         View view = LayoutInflater.from(context).inflate(R.layout.layout_custom_toast, null, false);
         AppCompatImageView img = view.findViewById(R.id.img);
@@ -91,7 +120,11 @@ public class T {
         tvc.setText(title);
         img.setImageResource(R.mipmap.toast_icon_hint);
         toast.setView(view);
-        toast.setDuration(Toast.LENGTH_SHORT);
+        if(toastType==0) {
+            toast.setDuration(Toast.LENGTH_SHORT);
+        }else{
+            toast.setDuration(Toast.LENGTH_LONG);
+        }
         toast.setGravity(Gravity.CENTER, 0, 0);
         toast.show();
     }
@@ -101,14 +134,22 @@ public class T {
      * @如果是没有图片，默认此种方法
      * @param context
      * @param content
+     * @param  toastType :0 默认为 LENGTH_SHORT  1：则表示LENGTH_LONG
      */
-    public static void showCustomView(Context context, String content) {
+    public static void showCustomView(Context context, String content,int toastType) {
+        if (context instanceof Activity && ((Activity) context).isFinishing()) {
+            return;
+        }
         Toast toast = new Toast(context);
         View view = LayoutInflater.from(context).inflate(R.layout.layout_custom_toast_view, null, false);
         AppCompatTextView contentText = view.findViewById(R.id.content);
         contentText.setText(content);
         toast.setView(view);
-        toast.setDuration(Toast.LENGTH_SHORT);
+        if(toastType==0) {
+            toast.setDuration(Toast.LENGTH_SHORT);
+        }else{
+            toast.setDuration(Toast.LENGTH_LONG);
+        }
         toast.setGravity(Gravity.CENTER, 0, 0);
         toast.show();
 

@@ -41,22 +41,22 @@ public class MainActivity extends Activity implements View.OnClickListener{
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.one:
-                T.showFailCustomImage(this,"123123123");
+                T.showFailCustomImage(this,"123123123",0);
                 break;
             case R.id.one1:
-                T.showSuccessCustomImage(this,"123123123");
+                T.showSuccessCustomImage(this,"123123123",0);
                 break;
             case R.id.one2:
-                T.showloadingCustomImage(this,"123123123");
+                T.showloadingCustomImage(this,"123123123",0);
                 break;
             case R.id.one3:
-                T.showWrongCustomImage(this,"123123123");
+                T.showWrongCustomImage(this,"123123123",0);
                 break;
             case R.id.one4:
-                T.showCustomView(this,"123123123");
+                T.showCustomView(this,"123123123",0);
                 break;
             case R.id.one5:
-                T.showWrongCustomImage(this,"欢迎来到我的大世界\n一起疯狂");
+                T.showWrongCustomImage(this,"欢迎来到我的大世界\n一起疯狂",0);
                 break;
         }
     }
