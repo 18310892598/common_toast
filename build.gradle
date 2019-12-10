@@ -42,7 +42,7 @@ ext {
     targetSdkVersion = 29
     supportVersion = '1.0.0'
 
-    versionName = "1.0.1"//版本
-    versionCode = 2//版本序号
+    versionName = "1.0.3"//版本
+    versionCode = 4//版本序号
 }
 

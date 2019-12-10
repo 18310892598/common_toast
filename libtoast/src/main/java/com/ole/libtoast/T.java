@@ -49,8 +49,9 @@ public class T {
     }
 
     /**
-     * 自定义成功弹出toast
-     * @param context
+     * 自定义成功弹出toast，参数如下说明
+     * @param context 当前依赖上下文
+     * @param   title 显示的内容
      * @param  toastType :0 默认为 LENGTH_SHORT  1：则表示LENGTH_LONG
      */
     public static void showSuccessCustomImage(Context context,  String title,int toastType) {
