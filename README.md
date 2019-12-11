@@ -77,14 +77,14 @@ toastType 0:默认之前司机端样式，1：失败提示 2：表示成功 3：
        * @param message
        * @param toastType 0:toast原生样式，1：自定义失败提示 2：自定义成功样式 3：自定义加载中样式 4：自定义警告 5：自定义无图自定义样式
        */
-       *public static void show(Context context, String message,int toastType)
+       public static void show(Context context, String message,int toastType)
 
 
 
 ```java
 第一步骤
 //添加依赖
-api 'com.ole.libtoast:toast:1.0.4'
+api 'com.ole.libtoast:toast:1.0.5'
 
 说明:1、最新版本1.3解决了toast所依赖的上下文出现被销毁或者回收的时候调用toast
 引发的crash
