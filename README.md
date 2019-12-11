@@ -11,7 +11,7 @@ toastType 0:默认之前司机端样式，1：失败提示 2：表示成功 3：
      * @param context
      * @param message
      * @param toastType 0:toast原生样式，1：自定义失败提示 2：自定义成功样式 3：自定义加载中样式 4：自定义警告 5：自定义无图自定义样式
-     */
+     */<br>
     public static void showShort(Context context, CharSequence message,int toastType)
 
 
@@ -21,7 +21,7 @@ toastType 0:默认之前司机端样式，1：失败提示 2：表示成功 3：
        * @param context
        * @param message
        * @param toastType 0:toast原生样式，1：自定义失败提示 2：自定义成功样式 3：自定义加载中样式 4：自定义警告 5：自定义无图自定义样式
-       */
+       */<br>
       public static void showShort(Context context, int message,int toastType)
 
 3、 /**
@@ -30,7 +30,7 @@ toastType 0:默认之前司机端样式，1：失败提示 2：表示成功 3：
        * @param context
        * @param message
        * @param toastType 0:toast原生样式，1：自定义失败提示 2：自定义成功样式 3：自定义加载中样式 4：自定义警告 5：自定义无图自定义样式
-       */
+       */<br>
       public static void showLong(Context context, CharSequence message,int toastType)
 
 4、/**
@@ -39,7 +39,7 @@ toastType 0:默认之前司机端样式，1：失败提示 2：表示成功 3：
        * @param context
        * @param message
        * @param toastType 0:toast原生样式，1：自定义失败提示 2：自定义成功样式 3：自定义加载中样式 4：自定义警告 5：自定义无图自定义样式
-       */
+       */<br>
       public static void showLong(Context context, int message,int toastType)
 
 5、 /**
@@ -49,7 +49,7 @@ toastType 0:默认之前司机端样式，1：失败提示 2：表示成功 3：
        * @param message
        * @param duration
        * @param toastType 0:toast原生样式，1：自定义失败提示 2：自定义成功样式 3：自定义加载中样式 4：自定义警告 5：自定义无图自定义样式
-       */
+       */<br>
       public static void showCustom(Context context, CharSequence message, int duration,int toastType)
 6、 /**
        * 自定义显示Toast时间 int
@@ -58,7 +58,7 @@ toastType 0:默认之前司机端样式，1：失败提示 2：表示成功 3：
        * @param message
        * @param duration
        * @param toastType 0:toast原生样式，1：自定义失败提示 2：自定义成功样式 3：自定义加载中样式 4：自定义警告 5：自定义无图自定义样式
-       */
+       */<br>
       public static void showCustom(Context context, int message, int duration,int toastType)
 
 7、/**
@@ -67,7 +67,7 @@ toastType 0:默认之前司机端样式，1：失败提示 2：表示成功 3：
        * @param context
        * @param message
        * @param toastType 0:toast原生样式，1：自定义失败提示 2：自定义成功样式 3：自定义加载中样式 4：自定义警告 5：自定义无图自定义样式
-       */
+       */<br>
       public static void show(Context context, int message,int toastType)
 
 8、/**
@@ -76,7 +76,7 @@ toastType 0:默认之前司机端样式，1：失败提示 2：表示成功 3：
        * @param context
        * @param message
        * @param toastType 0:toast原生样式，1：自定义失败提示 2：自定义成功样式 3：自定义加载中样式 4：自定义警告 5：自定义无图自定义样式
-       */
+       */<br>
       public static void show(Context context, String message,int toastType)
 
 
