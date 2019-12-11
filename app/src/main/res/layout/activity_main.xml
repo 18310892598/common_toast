@@ -10,6 +10,12 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
      android:orientation="vertical">
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/cloase"
+          android:text="关闭"
+          />
    <Button
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
