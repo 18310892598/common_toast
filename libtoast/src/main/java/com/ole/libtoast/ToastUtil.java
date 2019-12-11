@@ -199,6 +199,9 @@ public class ToastUtil {
      * @param duration
      */
     public static void toastViewShow(Context context, CharSequence message,int duration,int toastType){
+        if (context instanceof Activity && ((Activity) context).isFinishing()) {
+            return;
+        }
         if(toastType==0) {
             Toast.makeText(context, message, duration).show();
         }else if(toastType==1){
