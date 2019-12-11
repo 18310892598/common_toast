@@ -77,8 +77,8 @@ toastType 0:默认之前司机端样式，1：失败提示 2：表示成功 3：
        * @param message
        * @param toastType 0:toast原生样式，1：自定义失败提示 2：自定义成功样式 3：自定义加载中样式 4：自定义警告 5：自定义无图自定义样式
        */
-       </br>
-      public static void show(Context context, String message,int toastType)
+
+* public static void show(Context context, String message,int toastType)
 
 
 
