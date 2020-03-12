@@ -105,15 +105,16 @@ api 'com.ole.libtoast:toast:1.0.5'
 
 ------------------------------------------------
 举例：show方法，其他方法参考上面
+0:toast原生样式，1：自定义失败提示 2：自定义成功样式 3：自定义加载中样式 4：自定义警告 5：自定义无图自定义样式
 
 1、失败弹出toast
- OlaToast.show(this,"123123123",0);
+ OlaToast.show(this,"123123123",1);
 2、成功toast提示
- OlaToast.show(this,"123123123",0);
+ OlaToast.show(this,"123123123",2);
 3、加载中toast
- OlaToast.show(this,"123123123",0);
+ OlaToast.show(this,"123123123",3);
 4、警告toast
- OlaToast.show(this,"123123123",0);
+ OlaToast.show(this,"123123123",4);
 5、通用没有图片的toast展示
  OlaToast.show(this,"1123132",0);
 
