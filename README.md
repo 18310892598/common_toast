@@ -5,6 +5,7 @@
 toastType 0:默认之前司机端样式，1：失败提示 2：表示成功 3：加载中 4：警告 5：无图自定义样式
 
 1梳理司机端目前使用的方法
+```java
     /**
      * 短时间显示Toast str
      *
@@ -13,7 +14,8 @@ toastType 0:默认之前司机端样式，1：失败提示 2：表示成功 3：
      * @param toastType 0:toast原生样式，1：自定义失败提示 2：自定义成功样式 3：自定义加载中样式 4：自定义警告 5：自定义无图自定义样式
      */
     public static void showShort(Context context, CharSequence message,int toastType)
-
+ 
+   
 
 2、   /**
        * 短时间显示Toast int
@@ -79,7 +81,7 @@ toastType 0:默认之前司机端样式，1：失败提示 2：表示成功 3：
        */
        public static void show(Context context, String message,int toastType)
 
-
+```
 
 ```java
 第一步骤
@@ -92,7 +94,6 @@ api 'com.ole.libtoast:toast:1.0.5'
 
 
  
-```
 ```java
 第二步骤
 
